@@ -27,7 +27,7 @@ body {
     height: 100vh;
     /* max-width: 100vw; */
     /* max-height: 100vh; */
-    background-image: url(/imgs/i4.jpg);
+    background-image: url(imgs/i4.jpg);
     background-position: center center;
     background-size: cover;
     display: flex;
