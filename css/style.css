@@ -1,0 +1,704 @@
+:root {
+    --bgColor: red;
+    --Color: white;
+    --secColor: rgb(255, 63, 153);
+    --cicle: 50%;
+    --pill: 999px;
+    --shadeLg: 0 3px 5px 0 grey;
+    --shadeXl: 0 3px 30px 0 grey;
+    --hdn: hidden
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.bgOfHome {
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* max-width: 100vw; */
+    /* max-height: 100vh; */
+    background-image: url(/imgs/i4.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+/* Portion of home page with nav bar and some important matter */
+nav {
+    width: 90vw;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 10px;
+    position: absolute;
+    top: 30px;
+    left: auto;
+    color: var(--Color);
+    backdrop-filter: blur(2px);
+}
+
+nav .logo {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+nav .logo .cir {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: red;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--Color);
+}
+
+nav ul button {
+    color: var(--Color);
+    background: transparent;
+    border: 1px solid var(--Color);
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul button:hover {
+    background: var(--Color);
+    color: black;
+}
+
+.matterOfHomePage {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: max-content;
+    /* backdrop-filter: blur(10px); */
+    color: var(--Color);
+}
+
+.matterOfHomePage span {
+    margin: 5px 0;
+}
+
+.matterOfHomePage button {
+    background: var(--secColor);
+    color: var(--Color);
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.matterOfHomePage button:hover {
+    background: var(--Color);
+    color: var(--secColor);
+}
+
+/* End of Portion of home page  */
+
+/* second portion */
+.mtr {
+    width: 90vw;
+    height: max-content;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-between;
+    /* align-items; */
+    padding: 40px 0;
+    margin: 20px auto;
+}
+
+.mtr h1 {
+    font-size: 35px;
+}
+
+.mtr .matter {
+    width: 50%;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+/* Mtr2 */
+.mtr2 {
+    overflow: hidden;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:flex-end; */
+    align-items: flex-end;
+    /* border: 2px solid black; */
+    margin: auto;
+    padding: 0 5px;
+}
+
+.mtr2 .matter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.mtr2 .imgTitle {
+    padding: 10px 0;
+    width: 65%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: flex-start;
+    color: var(--secColor);
+}
+
+.mtr2 .img {
+    /* border: 2px solid black; */
+    min-width: 64.9%;
+    max-width: 65%;
+    min-height: min-content;
+    overflow: hidden;
+}
+
+.mtr2 .img img {
+    transform: scale(1.2);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.mtr2 .matter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 0;
+    width: 50%;
+    /* border: 2px solid black; */
+    color: grey;
+}
+
+.mtr2 button {
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid var(--secColor);
+    color: var(--secColor);
+    background: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+
+.mtr2 button:hover {
+    background: var(--secColor);
+    color: var(--Color);
+}
+
+/* Mtr3 */
+.mtr3 {
+    /* border: 2px solid black; */
+    width: 90vw;
+    margin: 20px auto;
+    display: flex;
+}
+
+.mtr3 .box {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    width: 50%;
+    padding: 0 10px;
+}
+
+.mtr3 .box2 {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.mtr3 .ans {
+    /* border: 2px solid black; */
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.mtr3 h1 {
+    font-size: 40px;
+}
+
+.mtr3 .box2 h1 {
+    align-self: flex-start;
+}
+
+/* Third portion */
+.thirdPort {
+    /* min-height: 99vh; */
+    /* max-height: 100vh; */
+    /* min-width: 99vw; */
+    max-width: 100vw;
+    background: var(--secColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    color: var(--Color);
+}
+
+.third {
+    width: 70vw;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mtrOfThirdPort {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--Color);
+    /* text-align: le; */
+}
+
+.thirdPort .img {
+    /* min-width: 79%; */
+    max-width: 80%;
+    overflow: hidden;
+    /* border: 2px solid black; */
+}
+
+.thirdPort .img img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    object-fit: cover;
+    object-position: center center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.mtrOfThirdPort button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--Color);
+    background: var(--secColor);
+    color: var(--Color);
+    transition: 0.3s;
+}
+
+.mtrOfThirdPort button:hover {
+    background: var(--Color);
+    color: var(--secColor);
+}
+
+/* end of third portion */
+/* Footer */
+footer {
+    background: black;
+}
+
+footer .footLogo {
+    /* border: 2px solid white; */
+    color: var(--Color);
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: red;
+}
+
+.footLogo .logo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+    color: var(--Color);
+}
+
+.footLogo .cir {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: red;
+}
+
+.footLogo button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: red;
+    background: transparent;
+}
+
+footer .list ul {
+    color: var(--Color);
+}
+
+footer .list {
+    box-sizing: border-box;
+    margin: 10px auto;
+    width: 80vw;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .list ul {
+    list-style: none;
+}
+
+.ulList3 li {
+    color: red;
+}
+
+.ulList3 h1 {
+    color: var(--Color);
+}
+
+footer .last {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 10px 0;
+    color: var(--Color);
+}
+
+/* End of footer */
+/* Media of Phone */
+@media only screen and (max-width:425px) {
+
+    /* Portion of home page with nav bar and some important matter */
+    nav {
+        width: 90vw;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+
+    nav .logo {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav ul button {
+        padding: 4px 2px;
+    }
+
+    .bgOfHome {
+        background-position: top right;
+    }
+
+    .matterOfHomePage {
+        left: 2%;
+        font-size: 10px;
+    }
+
+    /* End of Portion of home page  */
+    /* second portion */
+    .mtr {
+        margin: 10px;
+    }
+
+    .mtr h1 {
+        font-size: 20px;
+    }
+
+    .mtr .matter {
+        width: 100%;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    /* Mtr2 */
+    .mtr2 .imgTitle {
+        width: 100%;
+        /* border: 2px solid black; */
+    }
+
+    .mtr2 .img {
+        margin: 10px 0;
+        max-width: 100%;
+        /* border: 2px solid black; */
+    }
+
+    .mtr2 .matter {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    /* mtr3 */
+    .mtr3 {
+        flex-direction: column;
+    }
+
+    .mtr3 .box {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .mtr3 .box h1 {
+        font-size: 20px;
+    }
+
+    .mtr3 .box2 {
+        margin-top: 20px;
+    }
+
+    /* third poriton */
+    .thirdPort {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .third {
+        max-width: 99vw;
+        align-items: flex-start;
+        font-size: 10px;
+    }
+
+    .third h1 {
+        font-size: 20px;
+    }
+
+    .third .img {
+        max-width: 100%;
+    }
+
+    .mtrOfThirdPort {
+        align-items: flex-start;
+    }
+
+    /* footer */
+    footer .list {
+        width: 95vw;
+        flex-wrap: wrap;
+        /* padding: 0; */
+    }
+
+    footer .list ul li h1 {
+        font-size: 18px;
+    }
+
+    footer .list ul li {
+        font-size: 15px;
+        margin-top: 5px;
+        padding: 0 10px;
+    }
+}
+
+/* Media of tablet */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+    /* Portion of home page with nav bar and some important matter */
+    nav {
+        width: 90vw;
+        font-size: 10px;
+        border-radius: 10px;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav ul button {
+        padding: 5px 10px;
+    }
+
+    .matterOfHomePage {
+        font-size: 12px;
+        left: 2%;
+    }
+
+    /* End of Portion of home page  */
+    /* second portion */
+    .mtr {
+        margin: 20px;
+    }
+
+    .mtr h1 {
+        font-size: 20px;
+    }
+
+    .mtr .matter {
+        width: 100%;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    /* mtr2 */
+    .mtr2 .imgTitle {
+        width: 100%;
+        /* border: 2px solid black; */
+    }
+
+    .mtr2 .img {
+        margin: 10px 0;
+        max-width: 100%;
+        /* border: 2px solid black; */
+    }
+
+    .mtr2 .matter {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    /* mtr3 */
+    .mtr3 {
+        flex-direction: column;
+    }
+
+    .mtr3 .box {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .mtr3 .box h1 {
+        font-size: 20px;
+    }
+
+    .mtr3 .box2 {
+        margin-top: 20px;
+    }
+
+    /* third poriton */
+    .third {
+        max-width: 90vw;
+        align-items: flex-start;
+        font-size: 15px;
+    }
+
+    .third h1 {
+        font-size: 20px;
+    }
+
+    .third .img {
+        max-width: 100%;
+    }
+
+    .mtrOfThirdPort {
+        align-items: flex-start;
+    }
+
+    /* footer */
+    footer .list {
+        width: 95vw;
+        flex-wrap: wrap;
+    }
+
+    footer .list ul {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+}
+
+/* Media of laptop */
+@media only screen and (min-width:769px) and (max-width:1100px) {
+
+    /* Portion of home page with nav bar and some important matter */
+
+    nav {
+        font-size: 12px;
+    }
+
+    /* End of Portion of home page  */
+    /* second portion */
+    .mtr .matter {
+        width: 100%;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    /* .mtr2 */
+    .mtr2 .imgTitle {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .mtr2 .img {
+        max-width: 80%;
+    }
+
+    .mtr2 .matter {
+        width: 80%;
+    }
+
+    /* mtr3 */
+    .mtr3 .ans {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .mtr3 h1 {
+        font-size: 30px;
+    }
+
+    /* third portion */
+    .third {
+        /* border: 2px solid black; */
+        max-width: 90vw;
+    }
+
+    .mtrOfThirdPort {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .third .img {
+        max-width: 90%;
+    }
+
+    /* footer */
+    footer .list {
+        margin: 20px auto;
+        font-size: 15px;
+    }
+}
